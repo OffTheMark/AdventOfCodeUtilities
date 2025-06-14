@@ -6,7 +6,7 @@ import PackageDescription
 let package = Package(
     name: "AdventOfCodeUtilities",
     platforms: [
-        .macOS(.v15),
+        .macOS(.v10_15),
     ],
     products: [
         .library(
