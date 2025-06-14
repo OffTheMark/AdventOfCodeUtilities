@@ -1,6 +1,6 @@
 //
 //  SequenceExtensions.swift
-//  
+//  AdventOfCodeUtilities
 //
 //  Created by Marc-Antoine Malépart on 2020-12-02.
 //

@@ -1,6 +1,6 @@
 //
 //  Printing.swift
-//  
+//  AdventOfCodeUtilities
 //
 //  Created by Marc-Antoine Malépart on 2020-11-26.
 //

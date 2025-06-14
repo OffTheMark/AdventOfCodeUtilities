@@ -8,13 +8,13 @@
 import Foundation
 import ArgumentParser
 
-public protocol DayCommand: ParsableCommand {
-    var puzzleInputPath: String { get set }
+@available(macOS 10.15, *)
+public protocol DayCommand: AsyncParsableCommand {
+    var puzzleInputURL: URL { get set }
 }
 
+@available(macOS 10.15, *)
 public extension DayCommand {
-    var puzzleInputURL: URL { URL(fileURLWithPath: puzzleInputPath) }
-    
     func readFile() throws -> String {
         let contents = try String(contentsOf: puzzleInputURL, encoding: .utf8)
         return contents.trimmingCharacters(in: .newlines)
